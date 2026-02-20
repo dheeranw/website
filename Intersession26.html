@@ -81,8 +81,12 @@ Studying quantum (information) theory from a categorical perspective requires wo
 </section>
     <!-- Footer -->
     <footer>
-        <p><small>&copy; 2025 Dheeran Wiggins. All rights reserved.<br />For site styling, I use the <em>phenomenal</em> CSS library <a href="https://latex.vercel.app" target="_blank" rel="noopener noreferrer"> \(\LaTeX\).css</a> by Vincent Dörig.</small></p>
+        <p><small>Last updated on <span id="last-updated-date"></span> by Dheeran Wiggins.<br />For site styling, I use the <em>phenomenal</em> CSS library <a href="https://latex.vercel.app" target="_blank" rel="noopener noreferrer"> \(\LaTeX\).css</a> by Vincent Dörig.</small></p>
         <h2>\[\mathfrak{D}^{\mathbb{E}}_{\mathcal{W}}\]</h2>
     </footer>
+    <script>
+    const lastModifiedDate = document.lastModified;
+    document.getElementById("last-updated-date").textContent = new Date(lastModifiedDate).toLocaleDateString();
+</script>
 </body>
 </html>
