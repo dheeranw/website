@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Travelogue</title>
+    <link rel="stylesheet" href="https://latex.vercel.app/style.css">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <style>
+        .container {
+  display: flex;
+}
+.container.spacer {  
+  justify-content: space-between;
+}
+    </style>
+</head>
+<body class="libertinus">
+    <!-- Header Section -->
+<header> 
+    <h1><span class="latex">Dheeran E. Wiggins</h1>
+    <div id="location"><p class="author">An Academic Travelogue of Sorts</p></div>
+</header>
+    <!-- Bio Section -->
+    <section id="bio">
+        <p>Some of my academic travel is documented below, descending reverse chronologically.</p>
+    </section>
+    <section id="misc">
+        <h3>Utrecht, 2025</h3> 
+      In the late summer of 2025, I attended the Summer School on Geometry at the Utrecht Geometry Centre. 
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p><small>Last updated on <span id="last-updated-date"></span> by Dheeran Wiggins.<br />For site styling, I use the <em>phenomenal</em> CSS library <a href="https://latex.vercel.app" target="_blank" rel="noopener noreferrer"> \(\LaTeX\).css</a> by Vincent Dörig.</small></p>
+        <h2>\[\mathfrak{D}^{\mathbb{E}}_{\mathcal{W}}\]</h2>
+    </footer>
+    <script>
+    const lastModifiedDate = document.lastModified;
+    document.getElementById("last-updated-date").textContent = new Date(lastModifiedDate).toLocaleDateString();
+</script>
+
+</body>
+</html>
