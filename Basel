@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Three Solutions to the Basel Problem</title>
+    <link rel="stylesheet" href="https://latex.vercel.app/style.css">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body class="libertinus">
+    <!-- Header Section -->
+<header> 
+    <h1><span class="latex">Three Solutions to the Basel Problemn</h1>
+    <p class="author">Spring 2026<br />University of Illinois Urbana Champaign</p>
+</header>
+<hr>
+<section id="contact">
+    <p><em>Instructor:</em> <a href = "https://dheeranwiggins.com"> Dheeran E. Wiggins </a><br/>Email: <a href="mailto:dheeran2@illinois.edu">dheeran2@illinois.edu</a> <br/>Here is the <a href="https://dheeranwiggins.com/231%20Honors/Syllabus.pdf"></a>
+    </p>
+</section>
+<hr>
+<section id="bio">
+    <p>Welcome to <em>Three Solutions to the Basel Problem</em>. In this honors project for Calculus II, we will look at<ul>
+        <li>the convergence of the Basel series\[1 + \frac{1}{4} + \frac{1}{9}= \sum_{n=1}^{\infty} \frac{1}{n^2}.\] </li>
+        <li>differentiation under the integral sign.</li>
+        <li>Fourier series and Parseval's identity. </li>
+        <li>Euler's solution via Weierstrass factorization.</li>
+    </ul>
+I believe that given your background . <em>But, it is hard.</em> My hope is that by the end of these lectures, you will be well-equipped to break into the literature, whether textbooks or papers. In particular, we will close out our discussion by working through some research papers ourselves.
+        </p> 
+</section>
+<section id="text"></section>
+<h3>Textbook</h3>
+<p><em>No textbook is required.</em> I will prepare weekly slides in \(\LaTeX\) and occasionally lecture at the board. There is a wealth of literature on the underlying mathematics and the hidden subgroup problem. Some of my favorites include <ul>
+  <li><em>The Hidden Subgroup Problem: Review and Open Problems</em> by Chris Lomont. This survey is thorough and has a great list of references for the subject. The appendices are also nice.</li>
+  <li><em>The Hidden Subgroup Problem</em> by Fr&eacute;d&eacute;ric Wang. The technical foundations of the hidden subgroup problem are detailed out in this wonderful Master's project. Further, it dips into research-level results and novel contributions, which would be a good first taste before jumping into the literature.</li>
+    <li><em>Quantum Computation and Quantum Information</em> "Mike and Ike" by Michael Nielsen and Isaac Chuang. This is a very standard text which does its best to balance all aspects of introductory quantum information. I think it does a good job.</li>
+    <li><em>Linear Algebra</em> by Stephen Friedberg, Arnold Insel, and Lawrence Spence. This is my favorite of the "quintessential" linear algebra texts. The treatment is rigorous, while not trying too hard to be an abstract algebra book.</li>
+    <li><em>Abstract Algebra</em> by David Dummit and Richard Foote. If you want to learn algebra, Dummit and Foote will carry you through the fundamentals, and further.</li>
+</ul>
+</p>
+</section>
+<section id="assign"></section>
+<h3>Assignments and Deliverables</h3>
+<p>This minicourse will have regular problem sets. Notably, I will include a handful exercises to be done as homework between lectures These will be pretty brief and should be easy after sitting through lecture. If not, I am happy to work through them with you!</p><p> You will also prepare a review paper detailing interesting results from lecture and your own reading. The assigned paper is <em>A subexponential-time quantum algorithm for the dihedral hidden subgroup problem</em> by Greg Kuperberg (<a href="https://epubs.siam.org/doi/10.1137/S0097539703436345">SIAM</a>).
+</p>
+</section>
+    <section id="notespsets"></section>
+<h3>Lectures and Problem Sets</h3>
+<ul>
+    <li><a href="Lecture08.pdf">Lecture 08</a><br /> After defining the general quantum Fourier transform, we learned about dihedral groups and finding hidden reflections. Complete <a href="Pset08.pdf">Problem Set 08</a>.</li>
+    <li><a href="Lecture07.pdf">Lecture 07</a><br /> We saw a solution to the general abelian hidden subgroup problem. We then looked at Simon's and Shor's algorithms. Complete <a href="Pset07.pdf">Problem Set 07</a>.</li>
+    <li><a href="Lecture06.pdf">Lecture 06</a><br /> After defining complex representations of finite groups, we used characters to define the abelian quantum Fourier transform. Complete <a href="Pset06.pdf">Problem Set 06</a>.</li>
+    <li><a href="Lecture05.pdf">Lecture 05</a><br/> We defined the cyclic quantum Fourier transform, which we then used to work out the cyclic hidden subgroup problem. Complete <a href="Pset05.pdf">Problem Set 05</a>.</li>
+    <li><a href="Lecture04.pdf">Lecture 04</a><br/> Motivated by the quantum axioms, we loosely defined a quantum circuit and defined the hidden subgroup problem. Complete <a href="Pset04.pdf">Problem Set 04</a>.</li>
+    <li><a href="Lecture03.pdf">Lecture 03</a><br/> We discussed tensor products, abstractly and using the Kronecker product. We then covered the four quantum axioms. Complete <a href="Pset03.pdf">Problem Set 03</a>.</li>
+    <li><a href="Lecture02.pdf">Lecture 02</a><br/> After mentioning the essentials of vector spaces, we talked about inner products and Dirac's bra-ket notation. Complete <a href="Pset02.pdf">Problem Set 02</a>.</li>
+    <li><a href="Lecture01.pdf">Lecture 01</a><br/> We covered the relevant basics of sets, groups, and the classification of finitely generated abelian groups (without proof). Complete <a href="Pset01.pdf">Problem Set 01</a>.</li>
+</ul>
+</p>
+    <!-- Footer -->
+    <footer>
+        <p><small>Last updated on <span id="last-updated-date"></span> by Dheeran Wiggins.<br />For site styling, I use the <em>phenomenal</em> CSS library <a href="https://latex.vercel.app" target="_blank" rel="noopener noreferrer"> \(\LaTeX\).css</a> by Vincent Dörig.</small></p>
+        <h2>\[\mathfrak{D}^{\mathbb{E}}_{\mathcal{W}}\]</h2>
+    </footer>
+    <script>
+    const lastModifiedDate = document.lastModified;
+    document.getElementById("last-updated-date").textContent = new Date(lastModifiedDate).toLocaleDateString();
+</script>
+</body>
+</html>
