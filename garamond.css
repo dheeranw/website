@@ -9,3 +9,6 @@ h5,
 h6 {
     font-family: 'EB Garamond', serif;
 }
+body {
+    font-size: 1.05rem;
+}
