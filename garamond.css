@@ -23,7 +23,10 @@ h5,
 h6 {
     font-family: 'EB Garamond', serif;
 }
-.quote-author {
-    text-align: right;
-    white-space: nowrap;
+p,
+li,
+blockquote,
+td,
+th {
+    font-size: 0.95em;
 }
