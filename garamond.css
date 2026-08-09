@@ -23,9 +23,6 @@ h5,
 h6 {
     font-family: 'EB Garamond', serif;
 }
-blockquote {
-    font-size: 0.93em;
-}
 blockquote cite {
     float: right;
     white-space: nowrap;
