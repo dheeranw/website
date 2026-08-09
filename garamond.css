@@ -1,6 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
 body,
+body.libertinus,
+article,
+section,
+header,
+footer,
+main,
+p,
+li,
+dt,
+dd,
+blockquote,
+table,
+caption,
+label,
 h1,
 h2,
 h3,
@@ -8,7 +22,4 @@ h4,
 h5,
 h6 {
     font-family: 'EB Garamond', serif;
-}
-body p {
-    font-size: 1.2em;
 }
