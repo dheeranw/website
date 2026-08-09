@@ -9,6 +9,4 @@ h5,
 h6 {
     font-family: 'EB Garamond', serif;
 }
-body {
-    font-size: 0.8rem;
-}
+@media (min-width: 1050px) { body { max-width: 88vw; } } @media (min-width: 769px) and (max-width: 1049px) { body { max-width: 68vw; } }
