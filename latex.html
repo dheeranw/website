@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LaTeX</title>
+    <link rel="stylesheet" href="https://latex.vercel.app/style.css">
+    <link rel="stylesheet" href="/garamond.css">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <style>
+        .container {
+  display: flex;
+}
+.container.spacer {  
+  justify-content: space-between;
+}
+    </style>
+</head>
+<body>
+<section>
+    <p><a href = "https://dheeranwiggins.com">Return home</a></p>
+</section>
+    <!-- Bio Section -->
+    <section id="bio">
+        <p>The essentials of creating a mathematics document, especially for teaching or note-taking purposes, in \(\LaTeX\) are described below. This was originally developed in Fall 2026 for students enrolled in Math 405: Teacher's Course, as taught by Dr. April Hoffmeister at the <em>University of Illinois</em>.</p>
+    </section>
+
+    <section id="Setup">
+        <h3>Setup</h3> 
+      First visit <a href="https://overleaf.com" target="_blank" rel="noopener noreferrer"> Overleaf</a> and log in. If you are affiliated with a university, then you can log in with your university credentials using the SSO option.
+    </section>
+    
+
+
+    <!-- Footer -->
+    <footer>
+        <p><small>Last updated on <span id="last-updated-date"></span> by Dheeran Wiggins.<br />For site styling, I use the <em>phenomenal</em> CSS library <a href="https://latex.vercel.app" target="_blank" rel="noopener noreferrer"> \(\LaTeX\).css</a> by Vincent Dörig.</small></p>
+        <h2>\[\mathfrak{D}^{\mathbb{E}}_{\mathcal{W}}\]</h2>
+    </footer>
+    <script>
+    const lastModifiedDate = document.lastModified;
+    document.getElementById("last-updated-date").textContent = new Date(lastModifiedDate).toLocaleDateString();
+</script>
+
+</body>
+</html>
