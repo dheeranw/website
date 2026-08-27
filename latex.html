@@ -105,7 +105,7 @@ The content of the theorem.
 \end{theorem}</code></pre>
      <p>If you type this in the \(n\)th section of the document and it is your \(m\)th theorem in that section, the output will look like</p>
      <p><b>Theorem \({n.m}\)</b> (Name of Theorem). <em>The content of the theorem.</em></p>
-     <p>On the other hand, we have also created a theorem environment called <code class="language-latex">Question</code> This will just be numbered by counting up from 1, which is usually what an exam would look like. Use this by writing</p><pre><code class="language-latex">\begin{question}[Name of Question]
+     <p>On the other hand, we have also created a theorem environment called <code class="language-latex">Question</code>. This will just be numbered by counting up from 1, which is usually what an exam would look like. Use this by writing</p><pre><code class="language-latex">\begin{question}[Name of Question]
 The content of the question
 \end{question}</code></pre>
     <p> If this is the \(p\)th question in your document, then the output will look like</p> 
@@ -159,7 +159,25 @@ The content of the proposition.
 
  <section id="SolutionsProofs">
         <h3>Proofs and Solutions</h3> 
-      <p>Surely, at some point while writing a math document, someone will have proven or solved something.</p>
+      <p>Surely, at some point while writing a math document, someone will have proven or solved something. Given a theorem, you can add a proof using the following format:</p><pre><code class="language-latex">\begin{theorem}[Name of Theorem]
+The content of the theorem.
+\end{theorem}   
+\begin{proof}
+The content of the proof.
+\end{proof}</code></pre><p>Now, if you want to instead call the response a solution, you can add <code class="language-latex">[Solution]</code> directly after <code class="language-latex">\begin{proof}</code>. More generally, you can put any text in the brackets:</p><pre><code class="language-latex">\begin{theorem}[Name of Theorem]
+The content of the theorem.
+\end{theorem}   
+\begin{proof}[Anything]
+The content of the proof.
+\end{proof}</code></pre>
+     <p>Now, remember that one of your tasks is to prepare a quiz. Usually, for mathematics exams, ample workspace should be included for a student to write their solution to a question, assuming no separate answer sheet was provided. For this, I use a silly technique, but it works. The command <code class="language-latex">\vspace{8cm}</code> creates eight centimeters of vertical space where you insert it. So, one question and solution on an exam could be typeset as follows:</p><pre><code class="language-latex">\begin{question}[Name of Question]
+The content of the question.
+\end{question}   
+\begin{proof}[Solution]
+\phantom{a} \\
+\vspace{8cm} \\
+\phantom{a}
+\end{proof}</code></pre><p>Here, the command <code class="language-latex">\phantom{a}</code> creates an invisible "a" and the command <code class="language-latex">\\</code> moves us to the next line. I encourage playing around with these commands, inputting different different centimeter lengths and different characters, to see how it affects the output.</p>
     </section>
 
      <section id="MultiplePartsAndChoice">
