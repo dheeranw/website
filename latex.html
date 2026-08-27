@@ -60,10 +60,30 @@
     
     <section id="InitialFormatting">
         <h3>Initial Formatting</h3> 
-      <p>First visit <a href="https://overleaf.com" target="_blank" rel="noopener noreferrer"> Overleaf</a> and log in. If you are affiliated with a university, then you can log in with your university credentials using the SSO option.</p>
-        <p>Then, click the "New Project" button and select the "Blank Project" option. You should then be prompted to name your project.</p>
-        <p>After naming, your project should have two panels. The left side is where you will write your \(\LaTeX\) and the right side is where you can see how your document currently looks.</p>
+      <p>You have countless options when it comes to formatting your documents. For formatting brief lecture notes, quizzes, problem sets, and such, I like using the amsart document class by the American Mathematical Society. This will give you access to the standard math packages and theorem/question styling without too much work.</p>
 
+        <p>To use amsart, you can replace</p>
+         <pre><code class="language-latex">
+\documentclass{article}  </code>
+</pre>
+with 
+<pre><code class="language-latex">
+\documentclass[oneside]{amsart}
+</code>
+</pre>
+        <p>I recommend passing the oneside option as above, since the pages of most documents you will make are likely not intended to be flipped like the pages of a book.</p>
+        <p>Now, the margins that come with amsart are a bit ridiculous for things like exams, so I would include the geometry package and pass the letterpaper option so your documents print as intended. Your preamble should look something like this now:</p>
+        <pre><code class="language-latex">
+\documentclass[oneside]{amsart}
+\usepackage{graphicx} % Required for inserting images
+\usepackage[letterpaper]{geometry}
+
+\title{Your Title}
+\author{Your Name}
+\date{Month Year}
+</code>
+</pre>
+        <p>Finally, you can pick your font for both text and math. Some classic choices are Times, EB</p>
     </section>
 
     <!-- Footer -->
