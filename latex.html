@@ -75,19 +75,55 @@ with <pre><code class="language-latex">\documentclass[oneside]{amsart}</code></p
         <p>Note that I have added the options to include your affiliation or address and your email. You can remove these by just deleting the relevant lines.</p>
         <p>Finally, you can pick your fonts for text and math. Some classic choices, besides the default Computer Modern, are Times and Palatino. Just include either</p>
 <pre><code class="language-latex">\usepackage[T1]{fontenc}
-    \usepackage{newtxtext, newtxmath}</code></pre>
+\usepackage{newtxtext, newtxmath}</code></pre>
 <p>or</p>
         <pre><code class="language-latex">\usepackage[T1]{fontenc}
-    \usepackage{newpxtext, newpxmath}</code></pre>
-<p>beneath the other pacakges in your preamble to load Times or Palatino, respectively.</p>
+\usepackage{newpxtext, newpxmath}</code></pre>
+<p>beneath the other packages in your preamble to load Times or Palatino, respectively.</p>
         <p>For a thorough list of your options, see the <a href="https://www.tug.org/FontCatalogue/"target="_blank" rel="noopener noreferrer">\(\LaTeX\) Font Catalogue</a>.</p>
     </section>
 
- <section id="QuestionsTheorems">
-        <h3>Questions and Theorems</h3> 
-      <p>When taking notes, creating notes for others, or preparing a problem set or exam, it is helpful to have Theorem or Question environments. In general, </p>
+<section id="Sections">
+        <h3>Sections</h3> 
+      <p>Creating multiple sections in your document is easy. Just write</p>
+     <pre><code class="language-latex">\section{Title of Section}</code></pre>
+    <p>each time you want to begin a new one. Everything following such a section declaration will be contained in that section. Similarly, subsections are added by writing</p>
+    <pre><code class="language-latex">\subsection{Title of Subsection}</code></pre>
+    <p>To include a table of contents, you can add the</p>
+    <pre><code class="language-latex">\tableofcontents</code></pre>
+    command, usually after <pre><code class="language-latex">\maketitle}</code></pre>
     </section>
     
+ <section id="QuestionsTheorems">
+        <h3>Questions and Theorems</h3> 
+      <p>When taking notes, creating notes for others, or preparing a problem set or exam, it is helpful to have Theorem or Question environments ready. Include the line</p>
+     <pre><code class="language-latex">\newtheorem{theorem}{Theorem}[section]
+\newtheorem{exercise}{Exercise}</code></pre>
+     <p>This first creates a new theorem environment called Theorem, which will be numbered based on the section it is found in, and is used by writing</p><pre><code class="language-latex">\begin{theorem}[Name of Theorem] The content of the theorem.
+\end{theorem}</code></pre><div class="theorem">\(\mathrm{ (Name of Theorem)} The content of the theorem.</div>
+     <p>On the other hand, we have also created a theorem environment called Question. This will just be numbered by counting up from 1, which is usually what an exam would look like. </p>
+    </section>
+
+ <section id="MultiplePartsAndChoice">
+        <h3>Multiple Parts and Choice</h3> 
+      <p>When taking notes, creating notes for others, or preparing a problem set or exam, it is helpful to have Theorem or Question environments ready. Include the line</p>
+    </section>
+
+ <section id="MathEssentials">
+        <h3>Math Essentials</h3> 
+      <p>When taking notes, creating notes for others, or preparing a problem set or exam, it is helpful to have Theorem or Question environments ready. Include the line</p>
+    </section>
+
+ <section id="Graphs">
+        <h3>Graphs</h3> 
+      <p>When taking notes, creating notes for others, or preparing a problem set or exam, it is helpful to have Theorem or Question environments ready. Include the line</p>
+    </section>
+
+ <section id="Other Figures">
+        <h3>Other Figures</h3> 
+      <p>When taking notes, creating notes for others, or preparing a problem set or exam, it is helpful to have Theorem or Question environments ready. Include the line</p>
+    </section>
+
     <!-- Footer -->
     <footer>
         <p><small>Last updated on <span id="last-updated-date"></span> by Dheeran Wiggins.<br />For site styling, I use the <em>phenomenal</em> CSS library <a href="https://latex.vercel.app" target="_blank" rel="noopener noreferrer"> \(\LaTeX\).css</a> by Vincent Dörig.</small></p>
