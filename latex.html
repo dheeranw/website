@@ -52,17 +52,18 @@
 \section{Introduction}
       
 \end{document}</code></pre>
+        <p>Everything above the <code>\begin{document}</code> command is your preamble. Then, <code>\maketitle</code> displays the document information you entered, after which you can begin adding content to the body.</p>
     </section>
     
     <section id="InitialFormatting">
         <h3>Initial Formatting</h3> 
-      <p>You have countless options when it comes to formatting your documents. For formatting brief lecture notes, quizzes, problem sets, and such, I like using the amsart document class by the American Mathematical Society. This will give you access to the standard math packages and theorem styling without too much work.</p>
+      <p>You have countless options when it comes to formatting your documents. For formatting brief lecture notes, quizzes, problem sets, and such, I like using the <code>amsart</code> document class by the American Mathematical Society. This will give you access to the standard math packages and theorem styling without too much work.</p>
 
-        <p>To use amsart, you can replace</p>
+        <p>To use <code>amsart</code>, you can replace</p>
          <pre><code class="language-latex">\documentclass{article}</code></pre>
 with <pre><code class="language-latex">\documentclass[oneside]{amsart}</code></pre>
-        <p>I recommend passing the [oneside] option, as above, since the pages of most documents you will make are likely not intended to be flipped like the pages of a book.</p>
-        <p>Now, the margins that come with amsart are a bit ridiculous for things like exams, so I would include the geometry package and pass the [letterpaper] option so your documents print as intended. Your preamble should look something like this now:</p>
+        <p>I recommend passing the <code>[oneside]</code> option, as above, since the pages of most documents you will make are likely not intended to be flipped like the pages of a book.</p>
+        <p>Now, the margins that come with amsart are a bit ridiculous for things like exams, so I would include the <code>geometry</code> package and pass the <code>[letterpaper]</code> option so your documents print as intended. Your preamble should look something like this now:</p>
         <pre><code class="language-latex">\documentclass[oneside]{amsart}
 \usepackage{graphicx} % Required for inserting images
 \usepackage[letterpaper]{geometry}
@@ -92,24 +93,45 @@ with <pre><code class="language-latex">\documentclass[oneside]{amsart}</code></p
     <p>To include a table of contents, you can add the</p>
     <pre><code class="language-latex">\tableofcontents</code></pre>
     command, usually after <pre><code class="language-latex">\maketitle</code></pre>
+    <p>at the beginning of your body.</p>
     </section>
     
  <section id="QuestionsTheorems">
-        <h3>Questions and Theorems</h3> 
+        <h3>Theorems and Questions</h3> 
       <p>When taking notes, creating notes for others, or preparing a problem set or exam, it is helpful to have Theorem or Question environments ready. Include the code</p>
      <pre><code class="language-latex">\newtheorem{theorem}{Theorem}[section]
-\newtheorem{exercise}{Exercise}</code></pre>
+\newtheorem{question}{Question}</code></pre>
      <p>in your preamble, underneath your included packages. First, this creates a new theorem environment called Theorem, which will be numbered based on the section it is found in, and is used by writing</p><pre><code class="language-latex">\begin{theorem}[Name of Theorem]
 The content of the theorem.
 \end{theorem}</code></pre>
-     <p>If you type this in the \(n\)th section of the document and it is your first theorem in that section, the output will look like</p>
-     <p>
-     <p>On the other hand, we have also created a theorem environment called Question. This will just be numbered by counting up from 1, which is usually what an exam would look like. </p>
+     <p>If you type this in the \(n\)th section of the document and it is your \(m\)th theorem in that section, the output will look like</p>
+     <p><b>Theorem \(n.m\)</b> (Name of Theorem) <em>The content of the theorem.</em></p>
+     <p>On the other hand, we have also created a theorem environment called Question. This will just be numbered by counting up from 1, which is usually what an exam would look like. Use this by writing</p><pre><code class="language-latex">\begin{question}[Name of Question]
+The content of the question
+\end{question}</code></pre>
+    <p> If this is the \(p\)th question in your document, then the output will look like</p> 
+     <p><b>Question \(p\)</b> (Name of Question) <em>The content of the question.</em></p>
+     <p>You can add other theorem environments such as Lemma or Proposition by adding the following:</p><pre><code class="language-latex">\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}</code></pre>
+     <p>which creates a Lemma and a Proposition environment that are indexed by the same counter as Theorem. You would use them by writing</p><pre><code class="language-latex">\begin{lemma}[Name of Lemma]
+The content of the lemma.
+\end{lemma}</code></pre><p>and</p> <pre><code class="language-latex">\begin{proposition}[Name of Proposition]
+The content of the proposition.
+\end{proposition}</code></pre> <p>and these would look something like</p>
+     <p><b>Lemma \(n.m+1\)</b> (Name of Lemma) <em>The content of the lemma.</em></p>
+     <p>and</p>
+     <p><b>Proposition \(n.m+2\)</b> (Name of Proposition) <em>The content of the proposition.</em></p>
+     <p>Some classic environments that you may want, like Definition or Remark, probably should have upright text rather than italicized. To </p>
     </section>
 
  <section id="MultiplePartsAndChoice">
         <h3>Multiple Parts and Choice</h3> 
       <p>When taking notes, creating notes for others, or preparing a problem set or exam, it is helpful to have Theorem or Question environments ready. Include the line</p>
+    </section>
+
+ <section id="SolutionsProofs">
+        <h3>Proofs and Solutions</h3> 
+      <p>Surely, at some point while writing a math document, someone will have proven or solved something.</p>
     </section>
 
  <section id="MathEssentials">
