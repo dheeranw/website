@@ -96,11 +96,14 @@ with <pre><code class="language-latex">\documentclass[oneside]{amsart}</code></p
     
  <section id="QuestionsTheorems">
         <h3>Questions and Theorems</h3> 
-      <p>When taking notes, creating notes for others, or preparing a problem set or exam, it is helpful to have Theorem or Question environments ready. Include the line</p>
+      <p>When taking notes, creating notes for others, or preparing a problem set or exam, it is helpful to have Theorem or Question environments ready. Include the code</p>
      <pre><code class="language-latex">\newtheorem{theorem}{Theorem}[section]
 \newtheorem{exercise}{Exercise}</code></pre>
-     <p>This first creates a new theorem environment called Theorem, which will be numbered based on the section it is found in, and is used by writing</p><pre><code class="language-latex">\begin{theorem}[Name of Theorem] The content of the theorem.
-\end{theorem}</code></pre><div class="theorem">\(\mathrm{ (Name of Theorem)}\) The content of the theorem.</div>
+     <p>in your preamble, underneath your included packages. First, this creates a new theorem environment called Theorem, which will be numbered based on the section it is found in, and is used by writing</p><pre><code class="language-latex">\begin{theorem}[Name of Theorem]
+The content of the theorem.
+\end{theorem}</code></pre>
+     <p>If you type this in the \(n\)th section of the document and it is your first theorem in that section, the output will look like</p>
+     <p>
      <p>On the other hand, we have also created a theorem environment called Question. This will just be numbered by counting up from 1, which is usually what an exam would look like. </p>
     </section>
 
