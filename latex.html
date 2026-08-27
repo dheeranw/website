@@ -105,27 +105,57 @@ with <pre><code class="language-latex">\documentclass[oneside]{amsart}</code></p
 The content of the theorem.
 \end{theorem}</code></pre>
      <p>If you type this in the \(n\)th section of the document and it is your \(m\)th theorem in that section, the output will look like</p>
-     <p><b>Theorem \(\mathbf{n.m}\)</b> (Name of Theorem) <em>The content of the theorem.</em></p>
+     <p><b>Theorem \({n.m}\)</b> (Name of Theorem). <em>The content of the theorem.</em></p>
      <p>On the other hand, we have also created a theorem environment called Question. This will just be numbered by counting up from 1, which is usually what an exam would look like. Use this by writing</p><pre><code class="language-latex">\begin{question}[Name of Question]
 The content of the question
 \end{question}</code></pre>
     <p> If this is the \(p\)th question in your document, then the output will look like</p> 
-     <p><b>Question \(\mathbf{p}\)</b> (Name of Question) <em>The content of the question.</em></p>
+     <p><b>Question \({p}\)</b> (Name of Question) <em>The content of the question.</em></p>
      <p>You can add other theorem environments, such as Lemma or Proposition, analogously by adding the following:</p><pre><code class="language-latex">\newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{proposition}[theorem]{Proposition}</code></pre>
      <p>which creates a Lemma and a Proposition environment that are indexed by the same counter as Theorem. Use these as before:</p><pre><code class="language-latex">\begin{lemma}[Name of Lemma]
 The content of the lemma.
-\end{lemma}</code></pre><p><b>Lemma \(\mathbf{n.m+1}\)</b> (Name of Lemma) <em>The content of the lemma.</em></p>
+\end{lemma}</code></pre><p><b>Lemma \({n.m+1}\)</b> (Name of Lemma). <em>The content of the lemma.</em></p>
      <p>
 <pre><code class="language-latex">\begin{proposition}[Name of Proposition]
 The content of the proposition.
-\end{proposition}</code></pre><p><b>Proposition \(\mathbf{n.m+2}\)</b> (Name of Proposition) <em>The content of the proposition.</em></p>
-     <p>Note that some classic environments that you may want, like Definition or Remark, should probably have upright text rather than italicized. To implement this, you can insert the following code:</p><pre><code class="language-latex">\theoremstyle{definition}
+\end{proposition}</code></pre><p><b>Proposition \({n.m+2}\)</b> (Name of Proposition). <em>The content of the proposition.</em></p>
+     <p>Note that some classic environments that you may want, like Definition, should probably have upright text rather than italicized, and some, like Remark, usually have their heading italicized and their content upright. To implement this, you can insert the following code:</p><pre><code class="language-latex">\theoremstyle{definition}
 \newtheorem{definition}[theorem]{Definition}
-\newtheorem{remark}[theorem]{Remark}</code></pre>
-     <p>Besides adding more packages and tweaking your fonts, your preamble should be set now. Here is an example of what your code panel could look like after all the above changes:</p><pre><code class="language-latex">\begin{question}[Name of Question]
-The content of the question
-\end{question}</code></pre>
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}</code></pre><p>Using the analogous commands as for Theorem and Question, these will compile as follows:</p>
+<p><b>Definition \({n.m+3}\)</b> (Name of Definition). The content of the definition.</p>
+<p><em>Remark \({n.m+4}\)</em> (Name of Remark). The content of the remark.</p>
+     <p>Besides adding more packages and tweaking your fonts, your preamble should be set now. Here is an example of what your code panel could look like after all the above changes:</p><pre><code class="language-latex">\documentclass[oneside]{amsart}
+\usepackage{graphicx} % Required for inserting images
+\usepackage[letterpaper]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{newpxtext, newpxmath}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{question}{Question}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\title{Your Title}
+\author{Your Name}
+\date{Month Year}
+\address{University of Illinois Urbana-Champaign, Illinois, 61801}
+\email{NetId@illinois.edu}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+
+\end{document}
+</code></pre>
     </section>
 
  <section id="SolutionsProofs">
