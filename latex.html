@@ -105,13 +105,13 @@ with <pre><code class="language-latex">\documentclass[oneside]{amsart}</code></p
 The content of the theorem.
 \end{theorem}</code></pre>
      <p>If you type this in the \(n\)th section of the document and it is your \(m\)th theorem in that section, the output will look like</p>
-     <p><b>Theorem \(n.m\)</b> (Name of Theorem) <em>The content of the theorem.</em></p>
+     <p><b>Theorem \(\mathbf{n.m}\)</b> (Name of Theorem) <em>The content of the theorem.</em></p>
      <p>On the other hand, we have also created a theorem environment called Question. This will just be numbered by counting up from 1, which is usually what an exam would look like. Use this by writing</p><pre><code class="language-latex">\begin{question}[Name of Question]
 The content of the question
 \end{question}</code></pre>
     <p> If this is the \(p\)th question in your document, then the output will look like</p> 
-     <p><b>Question \(p\)</b> (Name of Question) <em>The content of the question.</em></p>
-     <p>You can add other theorem environments such as Lemma or Proposition by adding the following:</p><pre><code class="language-latex">\newtheorem{lemma}[theorem]{Lemma}
+     <p><b>Question \(\mathbf{p}\)</b> (Name of Question) <em>The content of the question.</em></p>
+     <p>You can add other theorem environments, such as Lemma or Proposition, analogously by adding the following:</p><pre><code class="language-latex">\newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{proposition}[theorem]{Proposition}</code></pre>
      <p>which creates a Lemma and a Proposition environment that are indexed by the same counter as Theorem. You would use them by writing</p><pre><code class="language-latex">\begin{lemma}[Name of Lemma]
 The content of the lemma.
@@ -121,12 +121,11 @@ The content of the proposition.
      <p><b>Lemma \(n.m+1\)</b> (Name of Lemma) <em>The content of the lemma.</em></p>
      <p>and</p>
      <p><b>Proposition \(n.m+2\)</b> (Name of Proposition) <em>The content of the proposition.</em></p>
-     <p>Some classic environments that you may want, like Definition or Remark, probably should have upright text rather than italicized. To </p>
-    </section>
+     <p>Note that some classic environments that you may want, like Definition or Remark, should probably have upright text rather than italicized. To implement this, you can insert the following code to </p>
 
- <section id="MultiplePartsAndChoice">
-        <h3>Multiple Parts and Choice</h3> 
-      <p>When taking notes, creating notes for others, or preparing a problem set or exam, it is helpful to have Theorem or Question environments ready. Include the line</p>
+     <p>Besides adding more packages and tweaking your fonts, your preamble should be set now. Here is an example of what your code panel could look like after all the above changes:</p><pre><code class="language-latex">\begin{question}[Name of Question]
+The content of the question
+\end{question}</code></pre>
     </section>
 
  <section id="SolutionsProofs">
@@ -134,19 +133,24 @@ The content of the proposition.
       <p>Surely, at some point while writing a math document, someone will have proven or solved something.</p>
     </section>
 
+     <section id="MultiplePartsAndChoice">
+        <h3>Multiple Parts and Choice</h3> 
+      <p>Multiple choice questions and questions with multiple choices both require lists. There are a few ways to typeset lists, but I will describe a straightforward method that uses <code>itemize</code>. </p>
+    </section>
+
  <section id="MathEssentials">
         <h3>Math Essentials</h3> 
-      <p>When taking notes, creating notes for others, or preparing a problem set or exam, it is helpful to have Theorem or Question environments ready. Include the line</p>
+      <p>Being able to typeset mathematical characters efficiently is often the primary motivation for using \(\LaTeX\) while preparing course materials. [inline math] [block math] [fractions] [exponents] [standard operators] [integrals] [mathbb] [mathcal] [operatorname]</p>
     </section>
 
  <section id="Graphs">
         <h3>Graphs</h3> 
-      <p>When taking notes, creating notes for others, or preparing a problem set or exam, it is helpful to have Theorem or Question environments ready. Include the line</p>
+      <p>Tikz plotting</p>
     </section>
 
  <section id="Other Figures">
         <h3>Other Figures</h3> 
-      <p>When taking notes, creating notes for others, or preparing a problem set or exam, it is helpful to have Theorem or Question environments ready. Include the line</p>
+      <p>Inserting figures, mention mathcha</p>
     </section>
 
     <!-- Footer -->
