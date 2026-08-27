@@ -113,14 +113,13 @@ The content of the question
      <p><b>Question \(\mathbf{p}\)</b> (Name of Question) <em>The content of the question.</em></p>
      <p>You can add other theorem environments, such as Lemma or Proposition, analogously by adding the following:</p><pre><code class="language-latex">\newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{proposition}[theorem]{Proposition}</code></pre>
-     <p>which creates a Lemma and a Proposition environment that are indexed by the same counter as Theorem. You would use them by writing</p><pre><code class="language-latex">\begin{lemma}[Name of Lemma]
+     <p>which creates a Lemma and a Proposition environment that are indexed by the same counter as Theorem. These would look like</p><pre><code class="language-latex">\begin{lemma}[Name of Lemma]
 The content of the lemma.
-\end{lemma}</code></pre><p>and</p> <pre><code class="language-latex">\begin{proposition}[Name of Proposition]
+\end{lemma}</code></pre><p><b>Lemma \(n.m+1\)</b> (Name of Lemma) <em>The content of the lemma.</em></p>
+     <p>
+<pre><code class="language-latex">\begin{proposition}[Name of Proposition]
 The content of the proposition.
-\end{proposition}</code></pre> <p>and these would look something like</p>
-     <p><b>Lemma \(n.m+1\)</b> (Name of Lemma) <em>The content of the lemma.</em></p>
-     <p>and</p>
-     <p><b>Proposition \(n.m+2\)</b> (Name of Proposition) <em>The content of the proposition.</em></p>
+\end{proposition}</code></pre><p><b>Proposition \(n.m+2\)</b> (Name of Proposition) <em>The content of the proposition.</em></p>
      <p>Note that some classic environments that you may want, like Definition or Remark, should probably have upright text rather than italicized. To implement this, you can insert the following code to </p>
 
      <p>Besides adding more packages and tweaking your fonts, your preamble should be set now. Here is an example of what your code panel could look like after all the above changes:</p><pre><code class="language-latex">\begin{question}[Name of Question]
@@ -141,6 +140,11 @@ The content of the question
  <section id="MathEssentials">
         <h3>Math Essentials</h3> 
       <p>Being able to typeset mathematical characters efficiently is often the primary motivation for using \(\LaTeX\) while preparing course materials. [inline math] [block math] [fractions] [exponents] [standard operators] [integrals] [mathbb] [mathcal] [operatorname]</p>
+    </section>
+
+ <section id="TextEssentials">
+        <h3>Text Essentials</h3> 
+      <p>bolds, italics</p>
     </section>
 
  <section id="Graphs">
