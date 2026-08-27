@@ -52,18 +52,18 @@
 \section{Introduction}
       
 \end{document}</code></pre>
-        <p>Everything above the <code>\begin{document}</code> command is your preamble. Then, <code>\maketitle</code> displays the document information you entered, after which you can begin adding content to the body. Using the percent symbol allows you to write <code>% Comments</code>, i.e., notes to yourself or collaborators in the code that are not visible in the compiled document.</p>
+        <p>Everything above the <code class="language-latex">\begin{document}</code> command is your preamble. Then, <code class="language-latex">\maketitle</code> displays the document information you entered, after which you can begin adding content to the body. Using the percent symbol allows you to write <code class="language-latex">% Comments</code>, i.e., notes to yourself or collaborators in the code that are not visible in the compiled document.</p>
     </section>
     
     <section id="InitialFormatting">
         <h3>Initial Formatting</h3> 
-      <p>You have countless options when it comes to formatting your documents. For formatting brief lecture notes, quizzes, problem sets, and such, I like using the <code>amsart</code> document class by the American Mathematical Society. This will give you access to the standard math packages and theorem styling without too much work.</p>
+      <p>You have countless options when it comes to formatting your documents. For formatting brief lecture notes, quizzes, problem sets, and such, I like using the <code class="language-latex">amsart</code> document class by the American Mathematical Society. This will give you access to the standard math packages and theorem styling without too much work.</p>
 
-        <p>To use <code>amsart</code>, you can replace</p>
+        <p>To use <code class="language-latex">amsart</code>, you can replace</p>
          <pre><code class="language-latex">\documentclass{article}</code></pre>
 with <pre><code class="language-latex">\documentclass[oneside]{amsart}</code></pre>
-        <p>I recommend passing the <code>[oneside]</code> option, as above, since the pages of most documents you will make are likely not intended to be flipped like the pages of a book.</p>
-        <p>Now, the margins that come with amsart are a bit ridiculous for things like exams, so I would include the <code>geometry</code> package and pass the <code>[letterpaper]</code> option so your documents print as intended. Your preamble should look something like this now:</p>
+        <p>I recommend passing the <code class="language-latex">[oneside]</code> option, as above, since the pages of most documents you will make are likely not intended to be flipped like the pages of a book.</p>
+        <p>Now, the margins that come with amsart are a bit ridiculous for things like exams, so I would include the <code class="language-latex">geometry</code> package and pass the <code class="language-latex">[letterpaper]</code> option so your documents print as intended. Your preamble should look something like this now:</p>
         <pre><code class="language-latex">\documentclass[oneside]{amsart}
 \usepackage{graphicx} % Required for inserting images
 \usepackage[letterpaper]{geometry}
