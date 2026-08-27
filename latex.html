@@ -90,37 +90,36 @@ with <pre><code class="language-latex">\documentclass[oneside]{amsart}</code></p
      <pre><code class="language-latex">\section{Title of Section}</code></pre>
     <p>each time you want to begin a new one. Everything following such a section declaration will be contained in that section. Similarly, subsections are added by writing</p>
     <pre><code class="language-latex">\subsection{Title of Subsection}</code></pre>
-    <p>To include a table of contents, you can add the</p>
+    <p>To include a table of contents, you can add the simple line</p>
     <pre><code class="language-latex">\tableofcontents</code></pre>
-    command, usually after <pre><code class="language-latex">\maketitle</code></pre>
-    <p>at the beginning of your body.</p>
+    command, usually after <code class="language-latex">\maketitle</code> at the beginning of your body.</p>
     </section>
     
  <section id="QuestionsTheorems">
         <h3>Theorems and Questions</h3> 
-      <p>When taking notes, creating notes for others, or preparing a problem set or exam, it is helpful to have Theorem or Question environments ready. Include the code</p>
+      <p>When taking notes, creating notes for others, or preparing a problem set or exam, it is helpful to have <code class="language-latex">Theorem</code> or <code class="language-latex">Question</code> environments ready. Include the code</p>
      <pre><code class="language-latex">\newtheorem{theorem}{Theorem}[section]
 \newtheorem{question}{Question}</code></pre>
-     <p>in your preamble, underneath your included packages. First, this creates a new theorem environment called Theorem, which will be numbered based on the section it is found in, and is used by writing</p><pre><code class="language-latex">\begin{theorem}[Name of Theorem]
+     <p>in your preamble, underneath your included packages. First, this creates a new theorem environment called <code class="language-latex">Theorem</code>, which will be numbered based on the section it is found in, and is used by writing</p><pre><code class="language-latex">\begin{theorem}[Name of Theorem]
 The content of the theorem.
 \end{theorem}</code></pre>
      <p>If you type this in the \(n\)th section of the document and it is your \(m\)th theorem in that section, the output will look like</p>
      <p><b>Theorem \({n.m}\)</b> (Name of Theorem). <em>The content of the theorem.</em></p>
-     <p>On the other hand, we have also created a theorem environment called Question. This will just be numbered by counting up from 1, which is usually what an exam would look like. Use this by writing</p><pre><code class="language-latex">\begin{question}[Name of Question]
+     <p>On the other hand, we have also created a theorem environment called <code class="language-latex">Question</code> This will just be numbered by counting up from 1, which is usually what an exam would look like. Use this by writing</p><pre><code class="language-latex">\begin{question}[Name of Question]
 The content of the question
 \end{question}</code></pre>
     <p> If this is the \(p\)th question in your document, then the output will look like</p> 
      <p><b>Question \({p}\)</b> (Name of Question). <em>The content of the question.</em></p>
-     <p>You can add other theorem environments, such as Lemma or Proposition, analogously by adding the following:</p><pre><code class="language-latex">\newtheorem{lemma}[theorem]{Lemma}
+     <p>You can add other theorem environments, such as <code class="language-latex">Lemma</code> or <code class="language-latex">Proposition</code>, analogously by adding the following:</p><pre><code class="language-latex">\newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{proposition}[theorem]{Proposition}</code></pre>
-     <p>which creates a Lemma and a Proposition environment that are indexed by the same counter as Theorem. Use these as before:</p><pre><code class="language-latex">\begin{lemma}[Name of Lemma]
+     <p>which creates a <code class="language-latex">Lemma</code> and a <code class="language-latex">Proposition</code> environment that are indexed by the same counter as <code class="language-latex">Theorem</code>. Use these as before:</p><pre><code class="language-latex">\begin{lemma}[Name of Lemma]
 The content of the lemma.
 \end{lemma}</code></pre><p><b>Lemma \({n.m+1}\)</b> (Name of Lemma). <em>The content of the lemma.</em></p>
      <p>
 <pre><code class="language-latex">\begin{proposition}[Name of Proposition]
 The content of the proposition.
 \end{proposition}</code></pre><p><b>Proposition \({n.m+2}\)</b> (Name of Proposition). <em>The content of the proposition.</em></p>
-     <p>Note that some classic environments that you may want, like Definition, should probably have upright text rather than italicized, and some, like Remark, usually have their heading italicized and their content upright. To implement this, you can insert the following code:</p><pre><code class="language-latex">\theoremstyle{definition}
+     <p>Note that some classic environments that you may want, like <code class="language-latex">Definition</code>, probably ought to have upright text rather than italicized, and some, like <code class="language-latex">Remark</code>, usually have their heading italicized and their content upright. To implement this, you can insert the following code:</p><pre><code class="language-latex">\theoremstyle{definition}
 \newtheorem{definition}[theorem]{Definition}
 \theoremstyle{remark}
 \newtheorem{remark}[theorem]{Remark}</code></pre><p>Using the analogous commands as for Theorem and Question, these will compile as follows:</p>
