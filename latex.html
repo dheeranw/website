@@ -225,7 +225,7 @@ would be coded as</code></pre><p>Sometimes you will want block equation numbers,
 \int \frac{\ln(x)}{x^2}dx &= - \frac{\ln(x)}{x} - \int - \frac{1}{x^2} dx \\
           &= - \frac{\ln(x)}{x} - \frac{1}{x} + C \\
           &= - \frac{\ln(x) + 1}{x} + C.
-    \end{align*}</code></pre>
+\end{align*}</code></pre>
 <p>Observe that in the code, the ampersand <code class="language-latex">&</code> tells us where alignment should happen (at the \(=\) sign), whereas the <code class="language-latex">\\</code> takes us to the next row. The asterisk after <code class="language-latex">align</code> leaves off equation labels. To include them, just remove it.</p>
          <p>Similarly, when you wish to typeset a matrix of the form \[
             M = \begin{pmatrix} a & b & c \\ d & e & f \end{pmatrix}, \] you can use multiple alignment ampersands to write</p><pre><code class="language-latex">\[
@@ -238,7 +238,7 @@ M = \begin{pmatrix} a & b & c \\
 
  <section id="TextEssentials">
         <h3>Text Essentials</h3> 
-      <p>bolds, italics</p>
+      <p>Adjusting characteristics outside of math mode is somewhat. For bolds, use <code class="language-latex">\textbf{...}</code> and for italics, use <code class="language-latex">\emph{...}, and for small caps (\(\textsc{Hello}\)), use <code class="language-latex">\textsc{...}</code>. More information on text formatting, font sizing, and so forth can be found at <a href="https://www.overleaf.com/learn/latex/Font_sizes%2C_families%2C_and_styles" target="_blank" rel="noopener noreferrer">this</a> Overleaf guide.</p>
     </section>
 
  <section id="Graphs">
