@@ -217,7 +217,7 @@ would be coded as</code></pre><p>Sometimes you will want block equation numbers,
         <h3>Alignment and Matrices</h3> 
       <p>There is a standard bit of notation used across tasks in \(\LaTeX\) that is easily demonstrated by thinking about aligned equations and matrices. The mantra is that <code class="language-latex">&</code> is about horizontal alignment and <code class="language-latex">\\</code> is to make new rows. We recently saw the latter when adding vertical space for solutions.</p> <p>Sometimes you will need to carry out a multi-line computation of the form \[
       \begin{aligned} 
-\int \frac{\ln(x)}{x^2}dx &= - \frac{\ln(x)}{x} - \int - \frac{1}{x^2} dx \\
+\int \frac{\mathrm{l}\mathrm{n}(x)}{x^2}dx &= - \frac{\ln(x)}{x} - \int - \frac{1}{x^2} dx \\
           &= - \frac{\ln(x)}{x} - \frac{1}{x} + C \\
           &= - \frac{\ln(x) + 1}{x} + C.
     \end{aligned}
@@ -233,7 +233,7 @@ M = \begin{pmatrix} a & b & c \\
                     d & e & f
     \begin{pmatrix}
 \]</code></pre>
-<p>Here, the <code class="language-latex">p</code> in <code class="language-latex">pmatrix</code> stands for parentheses. Replacing it with a <code class="language-latex">b</code> gives you matrices with square brackets, and using no letter at all <code class="language-latex">\begin{matrix}</code> will just display a floating array of numbers.</p>
+<p>Here, the <code class="language-latex">p</code> in <code class="language-latex">pmatrix</code> stands for parentheses. Replacing it with a <code class="language-latex">b</code> gives you matrices with square brackets, and using no letter at all, <code class="language-latex">\begin{matrix}</code>, will just display a floating array of numbers.</p>
     </section>
 
  <section id="TextEssentials">
