@@ -254,14 +254,11 @@ M = \begin{pmatrix} a & b & c \\
         <h3>Plotting</h3> 
       <p>Plotting functions can be a bit tricky, and it is often easier to just graph the function elsewhere and upload an image. However, if you want your labels to respect global font changes in the document, then you may want to use TikZ.</p> <p>First, add the following to your preamble, with the other packages.</p><pre><code class="language-latex">\usepackage{tikz}
 \usepackage{pgfplots}
-\pgfplotsset{compat=1.18}</code></pre><p>Now, you will create a <code class="language-latex">tikzpicture</code> as a figure:</p>
-     <pre><code class="language-latex">\begin{figure}[htpb!]
+\pgfplotsset{compat=1.18}</code></pre><p>Now, you will create a <code class="language-latex">tikzpicture</code> as a figure:</p><pre><code class="language-latex">\begin{figure}[htpb!]
 \begin{tikzpicture}
 ...
 \end{tikzpicture}
-\end{figure}
-      </code>
-      </pre>
+\end{figure}</code></pre>
      <p>Inside the <code class="language-latex">tikzpicture</code> is where you will do your plotting, which will involve setting the axis characteristics, the labels, and describing the functions you want to plot. For example, see the code below for a plot of \(x^2\) and a basic sine. </p>
      <pre><code class="language-latex">\begin{figure}[htpb!]
 \begin{tikzpicture}
@@ -276,9 +273,7 @@ M = \begin{pmatrix} a & b & c \\
 \addplot[domain=-3:6, samples=100, color=red, thick] {sin(deg(x))};
 \end{axis}
 \end{tikzpicture}
-\end{figure}
-      </code>
-      </pre>
+\end{figure}</code></pre>
 <p>The <code class="language-latex">xmin</code> and <code class="language-latex">xmax</code> set the \(x\)-dimensions of the axes, and likewise for \(y\). The <code class="language-latex">axis lines</code> option can be switched from <code class="language-latex">middle</code> to <code class="language-latex">left</code>, and so forth. Then, labels are added.</p> <p>Finally, two plots are added, one blue and one red. The domain can be set for each function as an interval, with \([x,y]\) for \(x,y \in \mathbb{R}\) corresponding to <code class="language-latex">domain=x:y</code>. Then, the function itself is listed in curly brackets. Note that for sine, <code class="language-latex">deg</code> is added to the inside, converting from radians into degrees, which <code class="language-latex">sin</code> takes as input.</p> <p>See <a href="https://www.overleaf.com/learn/latex/LaTeX_Graphics_using_TikZ%3A_A_Tutorial_for_Beginners_(Part_2)—Generating_TikZ_Code_from_GeoGebra" target="_blank" rel="noopener noreferrer">here</a> for a method of plotting by first working in <a href="https://www.geogebra.org/?lang=en" target="_blank" rel="noopener noreferrer">Geogebra</a>.</p>
     </section>
 
