@@ -177,17 +177,29 @@ The content of the question.
 \phantom{a} \\
 \vspace{8cm} \\
 \phantom{a}
-\end{proof}</code></pre><p>Here, the command <code class="language-latex">\phantom{a}</code> creates an invisible "a" and the command <code class="language-latex">\\</code> moves us to the next line. I encourage playing around with these commands, inputting different different centimeter lengths and different characters, to see how it affects the output.</p>
+\end{proof}</code></pre><p>Here, the command <code class="language-latex">\phantom{a}</code> creates an invisible "a" and the command <code class="language-latex">\\</code> moves us to the next line. I encourage playing around with these commands to see how it affects the output. Namely, try inputting different different centimeter lengths, since shorter intended solutions will likely need less than eight, whereas longer ones may need more.</p>
     </section>
 
      <section id="MultiplePartsAndChoice">
-        <h3>Multiple Parts and Choice</h3> 
-      <p>Multiple choice questions and questions with multiple choices both require lists. There are a few ways to typeset lists, but I will describe a straightforward method that uses <code>itemize</code>. </p>
+        <h3>Multiple Parts and Choices</h3> 
+      <p>Multiple choice questions and questions with multiple parts both require lists. There are a few ways to typeset lists, but I will describe a straightforward method that uses <code class="language-latex">itemize</code>. Generally, <code class="language-latex">itemize</code> allows you to make a list and put any compilable character as the bullet for that entry. An Arabic numerated list with periods would look like</p><pre><code class="language-latex">\begin{itemize}
+\item[1.] List entry one
+\item[2.] List entry two
+\item[3.] List entry three
+\end{itemize}</code></pre><p>Similarly, a lowercase Roman numerated list with parentheses could look like</p><pre><code class="language-latex">\begin{itemize}
+\item[(i)] List entry one
+\item[(ii)] List entry two
+\item[(iii)] List entry three
+\end{itemize}</code></pre>
+         <p>Removing the brackets, leaving <code class="language-latex">\item</code> before each entry, will return a usual bulleted list. So, a question with multiple choices </p> 
     </section>
 
  <section id="MathEssentials">
         <h3>Math Essentials</h3> 
-      <p>Being able to typeset mathematical characters efficiently is often the primary motivation for using \(\LaTeX\) while preparing course materials. [inline math] [block math] [fractions] [exponents] [standard operators] [integrals] [mathbb] [mathcal] [operatorname]</p>
+      <p>Being able to typeset mathematical characters efficiently is often the primary motivation for using \(\LaTeX\) while preparing course materials. The easiest way to insert math in your document is to do it in-line, surrounding whatever math you wish to write in <code class="language-latex">$...$</code>. For example, this sentence with the polynomial \(f(x) = 5x^3 + 2x + 1\) would be coded as</p><pre><code class="language-latex">For example, this sentence with 
+the polynomial $f(x) = 5x^3 + 2x + 1$ would be coded as</code></pre> <p> However, in-line math is often difficult to read, especially when it involves a longer expression, in which case you should use block-math. To do so, surround your math with <code class="language-latex">\[...\]</code>. For example, this sentence with the Taylor series of sine \[\sin(x)= \sum_{n=0}^{\infty} \frac{(-1)^n x^{2n+1}}{(2n+1)!}\] would be coded as</p><pre><code class="language-latex">For example, this sentence with the Taylor series of sine
+\[\sin(x)= \sum_{n=0}^{\infty} \frac{(-1)^n x^{2n+1}}{(2n+1)!}\]
+would be coded as</code></pre><p> [fractions] [exponents] [standard operators] [integrals] [mathbb] [mathcal] [operatorname]</p>
     </section>
 
  <section id="TextEssentials">
