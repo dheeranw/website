@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coffee Log</title>
+    <link rel="stylesheet" href="https://latex.vercel.app/style.css">
+    <link rel="stylesheet" href="/garamond.css">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <style>
+        .container {
+  display: flex;
+}
+.container.spacer {  
+  justify-content: space-between;
+}
+    </style>
+</head>
+<body>
+<section>
+    <p><a href = "https://dheeranwiggins.com">Return home</a></p>
+</section>
+    <!-- Bio Section -->
+    <section id="bio">
+        <p>Below is a reverse chronological log of the coffees I have been brewing. As of late, I have tried to consistently purchase only from local roasters, even (or maybe, especially) when traveling. </p>
+    </section>
+
+    <section id="coffee">
+      <hl>
+        <li><em>Pilot</em> Catalan Natural Guatemala</li>
+        <li><em>Mad Goat</em> Coffee Ethiopian Shakiso</li>
+<li><em>Little Owl</em> Yirgacheffe Aricha Adorsi</li>
+<li><em>Counter Culture</em> Peru Valle Inca</li>
+<li><em>Krema Coffee</em> King Kaleeb Ethiopian</li>
+<li><em>Mad Goat</em> Coffee Ethiopian Yirgacheffe</li>
+<li><em>Counter Culture</em> Honduras Finca El Puente</li>
+<li><em>Dancing Goat</em> Ethiopia Sidamo Guji</li>
+<li><em>Immigrant Culture</em> Colombia Caballero</li>
+<li><em>Methodical Colombia</em> Limonada de Coco</li>
+<li><em>Ilse Coffee</em> Ethiopia Hamasho</li>
+<li><em>Elixr Coffee</em> Ethiopia Konga</li>
+<li><em>George Howell</em> Columbia El Progresso</li>
+      </hl>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p><small>Last updated on <span id="last-updated-date"></span> by Dheeran Wiggins.<br />For site styling, I use the <em>phenomenal</em> CSS library <a href="https://latex.vercel.app" target="_blank" rel="noopener noreferrer"> \(\LaTeX\).css</a> by Vincent Dörig.</small></p>
+        <h2>\[\mathfrak{D}^{\mathbb{E}}_{\mathcal{W}}\]</h2>
+    </footer>
+    <script>
+    const lastModifiedDate = document.lastModified;
+    document.getElementById("last-updated-date").textContent = new Date(lastModifiedDate).toLocaleDateString();
+</script>
+
+</body>
+</html>
